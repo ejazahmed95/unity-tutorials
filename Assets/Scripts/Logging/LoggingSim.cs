@@ -19,14 +19,17 @@ namespace Logging {
                 float randomValue = Random.value;
                 yield return new WaitForSeconds(0.5f + randomValue);
                 switch (randomValue) {
+                    case < 0.2f:
+                        Log.Debug($"{systemName.Bold()}: This is a debug log");
+                        break;
                     case < 0.3f:
-                        Debug.Log($"{systemName.Bold()}: This is a normal log");
+                        Log.Info($"{systemName.Bold()}: This is a normal log");
                         break;
                     case < 0.4f:
-                        Debug.LogWarning($"{systemName.Bold()}: This is a warning log".Color(Color.yellow));
+                        Log.Warn($"{systemName.Bold()}: This is a warning log");
                         break;
                     case < 0.5f:
-                        Debug.LogError($"{systemName.Bold()}: This is an error log".Color(Color.red));
+                        Log.Err($"{systemName.Bold()}: This is an error log");
                         break;
                 }
             }
