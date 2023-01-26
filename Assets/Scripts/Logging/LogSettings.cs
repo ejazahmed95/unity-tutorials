@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Logging {
 	public class LogSettings : MonoBehaviour {
@@ -7,7 +6,7 @@ namespace Logging {
 
 		private void Awake() {
 			if (overridenLogLevel != LogLevel.None) {
-				Log.SetLogLevel(overridenLogLevel);
+				CustomLogger.SetLogLevel(overridenLogLevel);
 			}
 		}
 	}

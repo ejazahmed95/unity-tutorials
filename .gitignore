@@ -107,3 +107,6 @@ orleans.codegen.cs
 
 # Editor Dependencies
 Assets/Asset\ Cleaner/
+
+# Custom
+Assets/Scripts/Logging/LogText.*
