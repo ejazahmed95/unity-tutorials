@@ -392,6 +392,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   overridenLogLevel: 3
+  customLevelSettings: []
+  customTagSettings: []
 --- !u!4 &937422651
 Transform:
   m_ObjectHideFlags: 0
