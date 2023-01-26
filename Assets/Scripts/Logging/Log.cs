@@ -23,6 +23,7 @@ namespace Logging {
 		public static void SetLogLevel(LogLevel level) {
 			_level = level;
 		}
+		public static LogLevel Level => _level;
 
 		public static void Trace(string message) {
 			if (_level > LogLevel.Trace) return;
@@ -52,7 +53,6 @@ namespace Logging {
 		public static void Fatal(string message) {
 			UnityEngine.Debug.LogError($"{message}".Color(Color.red));
 		}
-		
 		
 	}
 }
