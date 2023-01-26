@@ -5,12 +5,18 @@ using Random = UnityEngine.Random;
 
 namespace Logging {
     public class LoggingSim : MonoBehaviour {
+
+        public string customLogKey;
+        public GameObject customLogValue;
+
         private CustomLogger _logger;
+        private int value = 5;
 
         // Start is called before the first frame update
         void Start() {
             Random.InitState((int)DateTime.Now.Ticks);
             _logger = new CustomLogger(gameObject.name, this);
+            _logger.AddParameters(new LogParam(customLogKey, customLogValue));
             StartCoroutine(StartLogging());
         }
 
@@ -34,5 +40,6 @@ namespace Logging {
                 }
             }
         }
+        
     }
 }
