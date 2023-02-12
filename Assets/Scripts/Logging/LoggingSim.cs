@@ -9,12 +9,12 @@ namespace Logging {
         public string customLogKey;
         public GameObject customLogValue;
 
-        private CustomLogger _logger;
+        private PowerLogger _logger;
 
         // Start is called before the first frame update
         void Start() {
             Random.InitState((int)DateTime.Now.Ticks);
-            _logger = CustomLogger.Get($"{gameObject.name}");
+            _logger = PowerLogger.Get($"{gameObject.name}");
             _logger.AddParameters(new LogParam(customLogKey, customLogValue));
             StartCoroutine(StartLogging());
         }

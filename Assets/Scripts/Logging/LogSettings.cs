@@ -10,11 +10,15 @@ namespace Logging {
 		
 		private void Awake() {
 			if (overridenLogLevel != LogLevel.None) {
-				CustomLogger.SetLogLevel(overridenLogLevel);
+				PowerLogger.SetLogLevel(overridenLogLevel);
 			}
 
 			foreach (var setting in customTagSettings) {
-				CustomLogger.Get(setting.tag).UpdateSetting(setting.setting);
+				PowerLogger.Get(setting.tag).UpdateSetting(setting);
+			}
+			
+			foreach (var setting in customLevelSettings) {
+				PowerLogger.UpdateSetting(setting);
 			}
 		}
 	}

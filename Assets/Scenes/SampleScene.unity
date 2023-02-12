@@ -392,8 +392,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   overridenLogLevel: 3
-  customLevelSettings: []
-  customTagSettings: []
+  customLevelSettings:
+  - level: 4
+    messageSetting:
+      color: {r: 0.6792453, g: 0.50622314, b: 0.23389105, a: 0.85882354}
+      bold: 1
+      italic: 0
+      size: 12
+  customTagSettings:
+  - tag: GameManager
+    tagSetting:
+      color: {r: 0.764151, g: 0.37126204, b: 0.37126204, a: 0.8}
+      bold: 1
+      italic: 0
+      size: 0
 --- !u!4 &937422651
 Transform:
   m_ObjectHideFlags: 0
