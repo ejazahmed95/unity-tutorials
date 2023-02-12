@@ -3,7 +3,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace Logging {
+namespace EAUnity.Logging {
 	public class PowerLogger {
 
 		// Static Usage

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace Logging {
+namespace EAUnity.Logging {
 	public class LogSettings : MonoBehaviour {
 		public LogLevel overridenLogLevel = LogLevel.None;
 		

@@ -1,4 +1,4 @@
-﻿namespace Logging {
+﻿namespace EAUnity.Logging {
 	
 	public enum LogLevel {
 		None = 0,

@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace Logging {
+namespace EAUnity.Logging {
     public class LoggingSim : MonoBehaviour {
 
         public string customLogKey;

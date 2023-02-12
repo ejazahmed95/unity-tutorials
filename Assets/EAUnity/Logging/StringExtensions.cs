@@ -3,7 +3,7 @@ using System.Globalization;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace Logging {
+namespace EAUnity.Logging {
 	public static class StringExtensions {
 		public static string Bold(this string str) => "<b>" + str + "</b>";
 		public static string Color(this string str,string clr) => $"<color={clr}>{str}</color>";
